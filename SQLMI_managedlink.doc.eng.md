@@ -753,6 +753,14 @@ Remove-AzSqlInstanceLink `
 
 ---
 
+## Adding a New Database to the Managed Link
+
+If you already have a working Managed Instance Link and need to replicate an additional database, you do **not** need to reconfigure certificates, endpoints, or trust. You only need to create a new Availability Group and Distributed Availability Group for the new database, then create a new link on the Azure side.
+
+For the complete step-by-step instructions, see: **[SQLMI_managedlink.adddb.doc.eng.md](SQLMI_managedlink.adddb.doc.eng.md)**
+
+---
+
 ## Troubleshooting
 
 ### Verify Network Connectivity
@@ -819,4 +827,4 @@ SELECT SERVERPROPERTY('Collation') AS ServerCollation;
 ---
 
 *Document created: 2026-06-07*
-*Last updated: 2026-06-07*
+*Last updated: 2026-06-08*
